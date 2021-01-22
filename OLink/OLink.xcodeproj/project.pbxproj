@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		730ECC0B25B69210002679F0 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730ECC0A25B69210002679F0 /* TaskListViewModel.swift */; };
+		730ECC1325B6925D002679F0 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730ECC1225B6925D002679F0 /* TaskCellViewModel.swift */; };
+		7359BD6125B932BB0047EE82 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7359BD6025B932BA0047EE82 /* TaskRepository.swift */; };
+		7359BD6D25B953470047EE82 /* AppDelegate+Resolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7359BD6C25B953470047EE82 /* AppDelegate+Resolving.swift */; };
+		73E4350325B9A645007BC27B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73E4350225B9A645007BC27B /* GoogleService-Info.plist */; };
+		73E4350825B9A6F7007BC27B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4350725B9A6F7007BC27B /* AppDelegate.swift */; };
+		73E4350D25B9BAA3007BC27B /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4350C25B9BAA3007BC27B /* AppDelegate+Injection.swift */; };
+		73E4352F25B9C069007BC27B /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4352E25B9C069007BC27B /* AuthenticationService.swift */; };
+		73F06DCF25A4413900D2E175 /* OLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F06DCE25A4413900D2E175 /* OLinkApp.swift */; };
+		73F06DD125A4413900D2E175 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F06DD025A4413900D2E175 /* ContentView.swift */; };
+		73F06DD325A4413D00D2E175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73F06DD225A4413D00D2E175 /* Assets.xcassets */; };
+		73F06DD625A4413D00D2E175 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73F06DD525A4413D00D2E175 /* Preview Assets.xcassets */; };
+		73F06DE125A4413D00D2E175 /* OLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F06DE025A4413D00D2E175 /* OLinkTests.swift */; };
+		73F06DEC25A4413D00D2E175 /* OLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F06DEB25A4413D00D2E175 /* OLinkUITests.swift */; };
+		73F06FA825A45C0800D2E175 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F06FA725A45C0700D2E175 /* Task.swift */; };
+		73F06FBC25A46F7700D2E175 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F06FBB25A46F7700D2E175 /* TaskListView.swift */; };
+		85674BDBBF1D2BCEFDFB5B4B /* Pods_OLinkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72F43631CF27766396C13CD /* Pods_OLinkTests.framework */; };
+		9E7882EA66C9FA88999D711D /* Pods_OLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC0A3AE68C7B75FB0060EC3 /* Pods_OLink.framework */; };
+		B1ACDBC5BDAB6FE5FA661B3A /* Pods_OLink_OLinkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56B77F5B499CA9E68C3E83C /* Pods_OLink_OLinkUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73F06DDD25A4413D00D2E175 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73F06DC325A4413800D2E175 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73F06DCA25A4413900D2E175;
+			remoteInfo = OLink;
+		};
+		73F06DE825A4413D00D2E175 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73F06DC325A4413800D2E175 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73F06DCA25A4413900D2E175;
+			remoteInfo = OLink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0831916922163B38AC88CF17 /* Pods-OLink-OLinkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLink-OLinkUITests.release.xcconfig"; path = "Target Support Files/Pods-OLink-OLinkUITests/Pods-OLink-OLinkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0AC0A3AE68C7B75FB0060EC3 /* Pods_OLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD13454F1425618BA08C6C3 /* Pods-OLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLink.debug.xcconfig"; path = "Target Support Files/Pods-OLink/Pods-OLink.debug.xcconfig"; sourceTree = "<group>"; };
+		3C25C0235A4CC63FD84B7B75 /* Pods-OLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLink.release.xcconfig"; path = "Target Support Files/Pods-OLink/Pods-OLink.release.xcconfig"; sourceTree = "<group>"; };
+		4C78472CE5D75022CA7F5831 /* Pods-OLinkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLinkTests.debug.xcconfig"; path = "Target Support Files/Pods-OLinkTests/Pods-OLinkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		54D63C558E95915636B42056 /* Pods-OLinkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLinkTests.release.xcconfig"; path = "Target Support Files/Pods-OLinkTests/Pods-OLinkTests.release.xcconfig"; sourceTree = "<group>"; };
+		730ECC0A25B69210002679F0 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		730ECC1225B6925D002679F0 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		7359BD6025B932BA0047EE82 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		7359BD6C25B953470047EE82 /* AppDelegate+Resolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Resolving.swift"; sourceTree = "<group>"; };
+		73E4350225B9A645007BC27B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		73E4350725B9A6F7007BC27B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		73E4350C25B9BAA3007BC27B /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
+		73E4352E25B9C069007BC27B /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		73F06DCB25A4413900D2E175 /* OLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F06DCE25A4413900D2E175 /* OLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLinkApp.swift; sourceTree = "<group>"; };
+		73F06DD025A4413900D2E175 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		73F06DD225A4413D00D2E175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73F06DD525A4413D00D2E175 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73F06DD725A4413D00D2E175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73F06DDC25A4413D00D2E175 /* OLinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OLinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F06DE025A4413D00D2E175 /* OLinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLinkTests.swift; sourceTree = "<group>"; };
+		73F06DE225A4413D00D2E175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73F06DE725A4413D00D2E175 /* OLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F06DEB25A4413D00D2E175 /* OLinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLinkUITests.swift; sourceTree = "<group>"; };
+		73F06DED25A4413D00D2E175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73F06FA725A45C0700D2E175 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		73F06FBB25A46F7700D2E175 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		9760CC1C3C967AD643F61FC7 /* Pods-OLink-OLinkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLink-OLinkUITests.debug.xcconfig"; path = "Target Support Files/Pods-OLink-OLinkUITests/Pods-OLink-OLinkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D72F43631CF27766396C13CD /* Pods_OLinkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OLinkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56B77F5B499CA9E68C3E83C /* Pods_OLink_OLinkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OLink_OLinkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73F06DC825A4413900D2E175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E7882EA66C9FA88999D711D /* Pods_OLink.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F06DD925A4413D00D2E175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85674BDBBF1D2BCEFDFB5B4B /* Pods_OLinkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F06DE425A4413D00D2E175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1ACDBC5BDAB6FE5FA661B3A /* Pods_OLink_OLinkUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0168A839C351C5238DF7DAA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AC0A3AE68C7B75FB0060EC3 /* Pods_OLink.framework */,
+				F56B77F5B499CA9E68C3E83C /* Pods_OLink_OLinkUITests.framework */,
+				D72F43631CF27766396C13CD /* Pods_OLinkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		730ECC0925B691FB002679F0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				730ECC0A25B69210002679F0 /* TaskListViewModel.swift */,
+				730ECC1225B6925D002679F0 /* TaskCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7359BD5F25B9328B0047EE82 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				7359BD6025B932BA0047EE82 /* TaskRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		73E4352D25B9C053007BC27B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				73E4352E25B9C069007BC27B /* AuthenticationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		73F06DC225A4413800D2E175 = {
+			isa = PBXGroup;
+			children = (
+				73F06DCD25A4413900D2E175 /* OLink */,
+				73F06DDF25A4413D00D2E175 /* OLinkTests */,
+				73F06DEA25A4413D00D2E175 /* OLinkUITests */,
+				73F06DCC25A4413900D2E175 /* Products */,
+				D701C8324BDD670AA078E999 /* Pods */,
+				0168A839C351C5238DF7DAA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		73F06DCC25A4413900D2E175 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73F06DCB25A4413900D2E175 /* OLink.app */,
+				73F06DDC25A4413D00D2E175 /* OLinkTests.xctest */,
+				73F06DE725A4413D00D2E175 /* OLinkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73F06DCD25A4413900D2E175 /* OLink */ = {
+			isa = PBXGroup;
+			children = (
+				73E4352D25B9C053007BC27B /* Services */,
+				73F06DCE25A4413900D2E175 /* OLinkApp.swift */,
+				73F06DD025A4413900D2E175 /* ContentView.swift */,
+				73F06FA625A45BF500D2E175 /* Models */,
+				73F06FBA25A46F6400D2E175 /* Views */,
+				730ECC0925B691FB002679F0 /* ViewModels */,
+				7359BD5F25B9328B0047EE82 /* Repositories */,
+				73F06DD225A4413D00D2E175 /* Assets.xcassets */,
+				73F06DD725A4413D00D2E175 /* Info.plist */,
+				73E4350225B9A645007BC27B /* GoogleService-Info.plist */,
+				73F06DD425A4413D00D2E175 /* Preview Content */,
+				7359BD6C25B953470047EE82 /* AppDelegate+Resolving.swift */,
+				73E4350C25B9BAA3007BC27B /* AppDelegate+Injection.swift */,
+				73E4350725B9A6F7007BC27B /* AppDelegate.swift */,
+			);
+			path = OLink;
+			sourceTree = "<group>";
+		};
+		73F06DD425A4413D00D2E175 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				73F06DD525A4413D00D2E175 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73F06DDF25A4413D00D2E175 /* OLinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				73F06DE025A4413D00D2E175 /* OLinkTests.swift */,
+				73F06DE225A4413D00D2E175 /* Info.plist */,
+			);
+			path = OLinkTests;
+			sourceTree = "<group>";
+		};
+		73F06DEA25A4413D00D2E175 /* OLinkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				73F06DEB25A4413D00D2E175 /* OLinkUITests.swift */,
+				73F06DED25A4413D00D2E175 /* Info.plist */,
+			);
+			path = OLinkUITests;
+			sourceTree = "<group>";
+		};
+		73F06FA625A45BF500D2E175 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73F06FA725A45C0700D2E175 /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		73F06FBA25A46F6400D2E175 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73F06FBB25A46F7700D2E175 /* TaskListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D701C8324BDD670AA078E999 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BD13454F1425618BA08C6C3 /* Pods-OLink.debug.xcconfig */,
+				3C25C0235A4CC63FD84B7B75 /* Pods-OLink.release.xcconfig */,
+				9760CC1C3C967AD643F61FC7 /* Pods-OLink-OLinkUITests.debug.xcconfig */,
+				0831916922163B38AC88CF17 /* Pods-OLink-OLinkUITests.release.xcconfig */,
+				4C78472CE5D75022CA7F5831 /* Pods-OLinkTests.debug.xcconfig */,
+				54D63C558E95915636B42056 /* Pods-OLinkTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73F06DCA25A4413900D2E175 /* OLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73F06DF025A4413D00D2E175 /* Build configuration list for PBXNativeTarget "OLink" */;
+			buildPhases = (
+				388C04C1ACE338CAC31AB031 /* [CP] Check Pods Manifest.lock */,
+				73F06DC725A4413900D2E175 /* Sources */,
+				73F06DC825A4413900D2E175 /* Frameworks */,
+				73F06DC925A4413900D2E175 /* Resources */,
+				01CDEA97ED1D25F822BEE07E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OLink;
+			productName = OLink;
+			productReference = 73F06DCB25A4413900D2E175 /* OLink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73F06DDB25A4413D00D2E175 /* OLinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73F06DF325A4413D00D2E175 /* Build configuration list for PBXNativeTarget "OLinkTests" */;
+			buildPhases = (
+				6B448EBC7DD7B0A4BF262A6C /* [CP] Check Pods Manifest.lock */,
+				73F06DD825A4413D00D2E175 /* Sources */,
+				73F06DD925A4413D00D2E175 /* Frameworks */,
+				73F06DDA25A4413D00D2E175 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73F06DDE25A4413D00D2E175 /* PBXTargetDependency */,
+			);
+			name = OLinkTests;
+			productName = OLinkTests;
+			productReference = 73F06DDC25A4413D00D2E175 /* OLinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73F06DE625A4413D00D2E175 /* OLinkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73F06DF625A4413D00D2E175 /* Build configuration list for PBXNativeTarget "OLinkUITests" */;
+			buildPhases = (
+				5E29DE4C0A828C84F1D4BCB2 /* [CP] Check Pods Manifest.lock */,
+				73F06DE325A4413D00D2E175 /* Sources */,
+				73F06DE425A4413D00D2E175 /* Frameworks */,
+				73F06DE525A4413D00D2E175 /* Resources */,
+				A67A86878955646206A7C826 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73F06DE925A4413D00D2E175 /* PBXTargetDependency */,
+			);
+			name = OLinkUITests;
+			productName = OLinkUITests;
+			productReference = 73F06DE725A4413D00D2E175 /* OLinkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73F06DC325A4413800D2E175 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					73F06DCA25A4413900D2E175 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					73F06DDB25A4413D00D2E175 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 73F06DCA25A4413900D2E175;
+					};
+					73F06DE625A4413D00D2E175 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 73F06DCA25A4413900D2E175;
+					};
+				};
+			};
+			buildConfigurationList = 73F06DC625A4413800D2E175 /* Build configuration list for PBXProject "OLink" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73F06DC225A4413800D2E175;
+			productRefGroup = 73F06DCC25A4413900D2E175 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73F06DCA25A4413900D2E175 /* OLink */,
+				73F06DDB25A4413D00D2E175 /* OLinkTests */,
+				73F06DE625A4413D00D2E175 /* OLinkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73F06DC925A4413900D2E175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F06DD625A4413D00D2E175 /* Preview Assets.xcassets in Resources */,
+				73F06DD325A4413D00D2E175 /* Assets.xcassets in Resources */,
+				73E4350325B9A645007BC27B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F06DDA25A4413D00D2E175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F06DE525A4413D00D2E175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01CDEA97ED1D25F822BEE07E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OLink/Pods-OLink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OLink/Pods-OLink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OLink/Pods-OLink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		388C04C1ACE338CAC31AB031 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OLink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E29DE4C0A828C84F1D4BCB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OLink-OLinkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B448EBC7DD7B0A4BF262A6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OLinkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A67A86878955646206A7C826 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OLink-OLinkUITests/Pods-OLink-OLinkUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OLink-OLinkUITests/Pods-OLink-OLinkUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OLink-OLinkUITests/Pods-OLink-OLinkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73F06DC725A4413900D2E175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F06DD125A4413900D2E175 /* ContentView.swift in Sources */,
+				73F06FA825A45C0800D2E175 /* Task.swift in Sources */,
+				730ECC1325B6925D002679F0 /* TaskCellViewModel.swift in Sources */,
+				73E4350825B9A6F7007BC27B /* AppDelegate.swift in Sources */,
+				73E4352F25B9C069007BC27B /* AuthenticationService.swift in Sources */,
+				73E4350D25B9BAA3007BC27B /* AppDelegate+Injection.swift in Sources */,
+				730ECC0B25B69210002679F0 /* TaskListViewModel.swift in Sources */,
+				73F06DCF25A4413900D2E175 /* OLinkApp.swift in Sources */,
+				73F06FBC25A46F7700D2E175 /* TaskListView.swift in Sources */,
+				7359BD6D25B953470047EE82 /* AppDelegate+Resolving.swift in Sources */,
+				7359BD6125B932BB0047EE82 /* TaskRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F06DD825A4413D00D2E175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F06DE125A4413D00D2E175 /* OLinkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F06DE325A4413D00D2E175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F06DEC25A4413D00D2E175 /* OLinkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73F06DDE25A4413D00D2E175 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73F06DCA25A4413900D2E175 /* OLink */;
+			targetProxy = 73F06DDD25A4413D00D2E175 /* PBXContainerItemProxy */;
+		};
+		73F06DE925A4413D00D2E175 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73F06DCA25A4413900D2E175 /* OLink */;
+			targetProxy = 73F06DE825A4413D00D2E175 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		73F06DEE25A4413D00D2E175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		73F06DEF25A4413D00D2E175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73F06DF125A4413D00D2E175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BD13454F1425618BA08C6C3 /* Pods-OLink.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OLink/Preview Content\"";
+				DEVELOPMENT_TEAM = NENN99JJTJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ruyu.link;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73F06DF225A4413D00D2E175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C25C0235A4CC63FD84B7B75 /* Pods-OLink.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OLink/Preview Content\"";
+				DEVELOPMENT_TEAM = NENN99JJTJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ruyu.link;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73F06DF425A4413D00D2E175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C78472CE5D75022CA7F5831 /* Pods-OLinkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5B3KHLTB2W;
+				INFOPLIST_FILE = OLinkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.ruyu.OLinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OLink.app/OLink";
+			};
+			name = Debug;
+		};
+		73F06DF525A4413D00D2E175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D63C558E95915636B42056 /* Pods-OLinkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5B3KHLTB2W;
+				INFOPLIST_FILE = OLinkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.ruyu.OLinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OLink.app/OLink";
+			};
+			name = Release;
+		};
+		73F06DF725A4413D00D2E175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9760CC1C3C967AD643F61FC7 /* Pods-OLink-OLinkUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5B3KHLTB2W;
+				INFOPLIST_FILE = OLinkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.ruyu.OLinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OLink;
+			};
+			name = Debug;
+		};
+		73F06DF825A4413D00D2E175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0831916922163B38AC88CF17 /* Pods-OLink-OLinkUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5B3KHLTB2W;
+				INFOPLIST_FILE = OLinkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.ruyu.OLinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OLink;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73F06DC625A4413800D2E175 /* Build configuration list for PBXProject "OLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73F06DEE25A4413D00D2E175 /* Debug */,
+				73F06DEF25A4413D00D2E175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73F06DF025A4413D00D2E175 /* Build configuration list for PBXNativeTarget "OLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73F06DF125A4413D00D2E175 /* Debug */,
+				73F06DF225A4413D00D2E175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73F06DF325A4413D00D2E175 /* Build configuration list for PBXNativeTarget "OLinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73F06DF425A4413D00D2E175 /* Debug */,
+				73F06DF525A4413D00D2E175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73F06DF625A4413D00D2E175 /* Build configuration list for PBXNativeTarget "OLinkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73F06DF725A4413D00D2E175 /* Debug */,
+				73F06DF825A4413D00D2E175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73F06DC325A4413800D2E175 /* Project object */;
+}

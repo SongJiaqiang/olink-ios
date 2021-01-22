@@ -1,0 +1,6 @@
+framework module Pods_OLinkTests {
+  umbrella header "Pods-OLinkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
